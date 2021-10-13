@@ -18,6 +18,6 @@ urlpatterns = [
     path('cattoys/create/', views.CatToyCreate.as_view(), name='cattoys_create'),
     path('cattoys/<int:pk>/update/', views.CatToyUpdate.as_view(), name='cattoys_update'),
     path('cattoys/<int:pk>/delete/', views.CatToyDelete.as_view(), name='cattoys_delete'),
-    path('cats/<int:cat_id>/assoc_toy/<int:toy_id>', views.assoc_toy, name='assoc_toy'),
-    path('cats/<int:cat_id>/unassoc_toy/<int:toy_id>', views.unassoc_toy, name='unassoc_toy'),
+    path('cats/<int:cat_id>/assoc_toy/<int:toy_id>', views.associate_toy, name='associate_toy'),
+    path('cats/<int:cat_id>/unassoc_toy/<int:toy_id>', views.unassociate_toy, name='unassociate_toy'),
 ]

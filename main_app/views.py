@@ -117,12 +117,12 @@ class CatToyDelete(DeleteView):
     model = CatToy
     success_url = '/cattoys'
 
-def assoc_toy(request, cat_id, toy_id):
+def associate_toy(request, cat_id, toy_id):
     Cat.objects.get(id=cat_id).cattoys.add(toy_id)
     # return HttpResponseRedirect('/cats/'+str(cat_id)+'/')
     return redirect('cats_show', cat_id=cat_id)
 
-def unassoc_toy(request, cat_id, toy_id):
+def unassociate_toy(request, cat_id, toy_id):
     Cat.objects.get(id=cat_id).cattoys.remove(toy_id)
     return HttpResponseRedirect('/cats/'+str(cat_id)+'/')
 

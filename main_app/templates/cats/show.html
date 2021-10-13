@@ -23,7 +23,7 @@
                         </span>
                     </div>
                     <div class="card-action">
-                        <form action="{% url 'unassoc_toy' cat.id toy.id %}" method="post">
+                        <form action="{% url 'unassociate_toy' cat.id toy.id %}" method="post">
                             {% csrf_token %}
                         <button type="submit" class="btn">Remove</button>
                         </form>
@@ -46,7 +46,7 @@
             </span>
         </div>
         <div class="card-action">
-            <form action="{% url 'assoc_toy' cat.id toy.id %}" method="post">
+            <form action="{% url 'associate_toy' cat.id toy.id %}" method="post">
                 {% csrf_token %}
             <button type="submit" class="btn">Add</button>
             </form>
