@@ -2,8 +2,8 @@
 
 - [ ] fork and clone
 - [ ] Add a `.env` file with `SECRET_KEY=whatever-key-you-want`
-- [ ] Create database in SQL called `catsoncats` ( reference the `settings.py` file )
 - [ ] Install `python-dotenv` -> `pip3 install python-dotenv`
+- [ ] Create database in SQL called `catsoncats` ( reference the `settings.py` file )
   - [ ] `createdb catsoncats`
 - [ ] Migrate the database `python3 manage.py migrate`
 - [ ] Start server `python3 manage.py runserver`
