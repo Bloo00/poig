@@ -1,5 +1,5 @@
 """
-ASGI config for catcollectr project.
+ASGI config for forfeit project.
 
 It exposes the ASGI callable as a module-level variable named ``application``.
 
@@ -11,6 +11,6 @@ import os
 
 from django.core.asgi import get_asgi_application
 
-os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'catcollectr.settings')
+os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'forfeit.settings')
 
 application = get_asgi_application()
