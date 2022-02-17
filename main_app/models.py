@@ -1,3 +1,4 @@
+from operator import mod
 from django.db import models
 from django.contrib.auth.models import User
 
@@ -20,3 +21,19 @@ class Cat(models.Model):
 
     def __str__(self):
         return self.name
+
+class Summoner(models.Model):
+    name = models.CharField(max_length=100)
+    afk_rate = models.PositiveIntegerField()
+    honor_rating = models.PositiveIntegerField()
+
+    def __str__(self):
+        return self.name
+
+class SummonerTag(models.Model):
+    tag = models.CharField(max_length=9)
+    summoner = models.ForeignKey(Summoner, on_delete=models.CASCADE)
+
+    def __str__(self):
+        return self.tag
+

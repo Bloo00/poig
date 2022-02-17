@@ -82,7 +82,7 @@ DATABASES = {
 
     'ENGINE': 'django.db.backends.postgresql_psycopg2',
 
-    'NAME': 'forfeit',
+    'NAME': 'forfeitdata',
 
     'USER': 'postgres',
 
